@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+  <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel"stylesheet" media="screen">
+
+</head>
+<body>
+  <h1>{{name}}</h1>
+  <h2>Python version:</h2>
+{% for ver in example_list%}
+  <p>{{ver}}</p>
+{% endfor %}
+</body>
+</html>
